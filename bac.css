@@ -1,0 +1,68 @@
+.bac
+{
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    padding-bottom:80px;
+}
+.aa
+{
+    width:101px;
+    height: 41px;
+}
+.logo
+{
+height: 80px; 
+text-align:center;
+
+}
+.pic1
+{
+    width: 80px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    margin-left: 10%;
+    
+}
+.pic2
+{
+    width: 80px;
+    height: 80px;
+    float: right;
+    text-align: center;
+    margin-right: 10%;
+   
+}
+
+
+.test
+{
+    color: white;
+    letter-spacing:0.8px;
+    font-family:  sans-serif;
+    font-size: 30%;
+    font-weight: 400;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 80px;
+}
+.test2
+{
+    color: white;
+    letter-spacing: 0.8px;
+    font-family: sans-serif;
+    font-size: 30%;
+    font-weight: 400;
+    margin-right:5%;
+}
+.test3
+{
+    color: white;
+    letter-spacing: 0.8px;
+    font-family: sans-serif;
+    font-size: 30%;
+    font-weight: 400;
+    margin-left: 5%;
+}

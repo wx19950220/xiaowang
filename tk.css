@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    display: flex;
+    justify-content:space-between;
+    flex-direction:row;
+    align-items: center;
+    background-color: #5AC0CE;
+    height: 140px;
+    position:relative;
+    left:-8px;
+    top: -8px;
+    margin-right:-15px;
+    margin-bottom: 25px;
+}
+.content1
+{
+    height: 120px;
+    background:url(登陆_03.png) ;
+    background-repeat: no-repeat; 
+    background-size: 135px;
+    background-position: 38px 38px;
+    position: relative;
+    left:-5px;
+    width: 100%;
+    margin-right:-50px;
+    border: 0px;
+    color: black;
+    font-weight: 500;
+    padding-left: 18%;
+    font-size: 250%;
+    box-sizing: border-box;
+
+}
+.content2
+{
+    height: 120px;
+    background:url(登陆_06.png) ;
+    background-repeat: no-repeat; 
+    background-size: 135px;
+    background-position: 38px 38px;
+    position: relative;
+    left:-5px;
+    width: 100%;
+    margin-right:-50px;
+    border: 0px;
+    color: black;
+    font-weight: 500;
+    padding-left: 18%;
+    font-size: 250%;
+    box-sizing: border-box;
+
+}
+.pic
+{
+    width: 45px;
+    height: 66px;
+    margin-top: 53px;
+    margin-left: 5%;
+}
+
+.text1
+{
+    font-size: 230%;
+    color: white;
+    font-weight: 500;
+    margin-left: 50px;
+
+}
+.text2
+{
+    font-size: 300%;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+ 
+}
+.text3
+{
+    font-size: 230%;
+    color: white;
+    font-weight: 500;
+    margin-right: 50px;
+
+}
+.text4
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 330%;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 40px;
+    height: 180px;
+    width: 100%;
+    background-color: #5AC0CE;
+    position:relative;
+    left:-8px;
+    top: -8px;
+    margin-right:-50px;
+    border: 0px;
+    margin-top: 50px;
+
+}
+.form1
+{
+   width: 100%;
+   background-color: white;
+}
+input::-webkit-input-placeholder {
+
+    color:rgb(186,186,186);}
+  

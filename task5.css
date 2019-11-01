@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+}
+.header
+{
+    display: flex;
+    align-items:center;
+    height: 50px;
+    background-color: #5AC0CE;
+    position:fixed;
+    left:0px; 
+    top:0px;
+    width: 100%;
+}
+.header1
+{
+    height: 20px;
+    width: 20px;
+    color: white;
+    padding-left: 5%;
+}
+.header2
+{
+    color:white;
+    font-size: 18px;
+    font-weight: 540;
+    position: absolute;
+    left: 42%;
+    letter-spacing: 1px;
+    width: 100px;
+}
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    position:fixed;
+    left:0px; 
+    bottom:0px;
+    width: 100%;
+    background-color: white;
+}
+.footer1
+{
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ float: left;
+ height: 40px;
+ width: 40%;
+ margin-left: 6%;
+ border-radius:6px;
+ border:2px solid #5AC0CE;
+ color: #5AC0CE;
+ font-weight: 700;
+}
+.footer2
+{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ float: left;
+ height: 40px;
+ width: 40%;
+ margin-right: 6%;
+ text-align: center;
+ border-radius:6px;
+ background-color: #5AC0CE;
+ border:2px solid #5AC0CE;
+ color: white;
+ font-weight: 500;
+
+}
+.li3
+{
+    display: flex;
+    justify-content:flex-start;
+     list-style-type: none;
+    color:gray;
+    border-bottom: 1px solid rgb(225, 229, 231);
+    padding-bottom: 10px;
+    padding-top: 3%;
+    padding-left: 6%;
+
+}
+.a
+{
+    width: 250px;
+    margin-left:5% ;
+    color: black;
+    font-weight: 540;
+    
+}
+.li0
+{
+   padding-left: 1px;
+}
+.li1
+{
+    display: flex;
+    justify-content:flex-start;
+    list-style-type:none ;
+    font-size: 2px;
+    font-weight: 900;
+    color:#5AC0CE ;
+    border-bottom: 1px solid rgb(225, 229, 231);
+    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-left: 3%;
+
+}
+.c
+{
+    padding-left: 3%;
+    font-size: 18px;
+    font-weight:540;
+    color: black;
+    white-space: nowrap;
+    position: relative;
+    top: -2px;
+}
+.li2
+{
+    display: flex;
+    justify-content:flex-start;
+    list-style-type:none ;
+    border-bottom: 1px solid rgb(225, 229, 231);
+    padding-left: 6%;
+    padding-bottom: 2.5%;
+    padding-top: 3%;
+}
+.pic
+{
+  font-weight: 540;
+}
+.d
+{
+   padding-left: 3% ;
+   padding-right: 2% ;
+   color: rgb(225, 229, 231);
+}
+.b
+{
+  color:red;
+  font-weight: 540;
+  padding-left: 5%;
+  white-space: nowrap;
+}
+.e
+{
+    display: flex;
+    align-items: center;
+}
+.main
+{
+    position: absolute;
+    top: 50px;
+    bottom: 70px;
+    width: 100%;
+    overflow: auto;
+}

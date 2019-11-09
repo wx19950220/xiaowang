@@ -168,7 +168,7 @@ h3{
 }
 .drop-down-content li:hover font{
 position: relative ;
-left: -44px;
+left: -14%;
 }
 .nav .drop-down:hover .drop-down-content{
     display: block;

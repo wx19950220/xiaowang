@@ -163,6 +163,12 @@ h3{
 }
 .drop-down-content li:hover a{
     background-color:red;
+    width: 75%;
+    text-align: center;
+}
+.drop-down-content li:hover font{
+position: relative ;
+left: -38px;
 }
 .nav .drop-down:hover .drop-down-content{
     display: block;
@@ -315,4 +321,13 @@ div i
     width:70%;
     float: left;
     border-bottom:1px solid rgb(225, 229,231);
+}
+
+.header1:focus{
+    background-color: white;
+    color: rgb(85, 168, 179);
+}
+.header1:focus ~.header2{
+    background-color: rgb(85, 168, 179);
+    color:white;
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            ul,li,ol{
+                list-style:none;
+            }
+            .nav-list{
+                width:600px;
+                margin:0 auto;
+            }
+            .nav-list > li{
+                display:inline-block;
+                margin:5px -3px;
+                padding:3px 15px;
+                position:relative;
+            }
+            .nav-list > li:before{
+                content:'';
+                position:absolute;
+                bottom:0px;
+                width:0;
+                left:50%;
+                border-bottom:2px solid red;
+                transition:0.2s all linear;
+            }
+            .nav-list > li:hover::before{
+                left:0;
+                width:100%;
+
+            }
+            .nav-list > li:hover + li::before{
+                left:0;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="nav-list">
+            <li>epc监控</li>
+            <li>omc监控</li>
+            <li>Boss监控</li>
+            <li>Boss计费</li>
+        </ul>
+    </body>
+</html>
+————————————————
+版权声明：本文为CSDN博主「weixin_38322795」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_38322795/article/details/79930051

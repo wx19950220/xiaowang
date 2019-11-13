@@ -1,0 +1,139 @@
+.header {
+    height: 83px;
+    background-color: #29bde0;
+}
+.glyphicon-align-justify  {
+    position: relative;
+    top: 38px;
+    left: 30px;
+    font-size: 25px;
+    color: #fff;
+}
+.main {
+    position: absolute;
+    top: 83px;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+.text1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+    margin-top: 30px;
+    border: 1px solid #c9c9c9;
+    background-color: #fff;
+    font-size: 120%;
+    color: #9a9a9a;
+}
+.glyphicon-chevron-right {
+    position: relative;
+    left: 30px;
+    color: #e7e7e7;
+    font-size: 110%;
+}
+.text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 30px;
+    border: 1px solid #c9c9c9;
+    border-bottom-color: #fdda9a;
+    background-color: #fff;
+    font-size: 120%;
+    color: #fdda9a;
+}
+.content { 
+    height: 150px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+}
+.content1 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px; 
+    margin-left: 7.5%;
+    width: 85%;
+    height: 80px;
+    background-color: #69d1e9;
+    font-size: 120%;
+    color: #fff;
+}
+.content2 {
+    position: relative;
+    top: 35px;
+    margin: 0 auto;
+    font-size: 110%;
+    font-weight: 550;
+    color: #787878;
+    width: 203px;
+}
+.content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 80px;
+    background-color: #69d1e9;
+    font-size: 120%;
+    color: #fff;
+}
+.content4 {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    font-size: 110%;
+    font-weight: 550;
+    color: #787878;
+    width: 203px;
+}
+.content6 {
+    padding-top: 3px;
+    height: 130px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+}
+.circle1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #69d1e9;
+}
+.circle2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70px;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.box {
+    float: right;
+    position: relative;
+    left: -5%;
+    top: -260px;
+    width: 0px;
+    height: 0px;
+    border-top:20px solid #fff;
+    border-bottom:20px solid #fff;
+    border-left:20px solid  #fbb435;
+}

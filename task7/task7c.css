@@ -83,7 +83,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 120%;
-    padding: 10px 20px 0px 10px;
+    padding: 10px 20px 0 30px;
 }
 .time {
     font-size: 80%;
@@ -92,7 +92,7 @@
 .content1 {
     line-height: 23px;
     color: #a6a6a6;
-    padding: 10px 20px 0 10px;
+    padding: 10px 20px 0 30px;
 }
 .footer {
     display: flex;

@@ -89,7 +89,7 @@
 .main1 {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 10vw;
 }
 .content1 {
     background-color: #f5c97b;
@@ -128,26 +128,16 @@
 .list1 {
     width: 4vw;
     height: 4vw;
-    background: url(images/css_sprites.png)-11px -142px;
-    background-repeat: no-repeat;
+   
 }
 .list2 {
-    width: 4vw;
-    height: 4vw;
-    background: url(images/css_sprites.png)-78px -88px;
-    background-repeat: no-repeat;
+    width: 17%;
 }
 .list3 {
-    width: 4vw;
-    height: 4vw;
-    background: url(images/css_sprites.png)-158px -13px;
-    background-repeat: no-repeat;
+    width: 17%;    
 }
 .list4 {
-    width: 4vw;
-    height: 4vw;
-    background: url(images/css_sprites.png)-158px -58px;
-    background-repeat: no-repeat;
+    width: 17%;   
 }
 .content:hover .list5 {
     display: flex;

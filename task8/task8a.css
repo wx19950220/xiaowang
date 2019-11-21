@@ -113,6 +113,7 @@
 .navbar-nav {
     font-size: 120%;
     position: relative;
+    margin-left: -90px;
 }
 
 .carousel {

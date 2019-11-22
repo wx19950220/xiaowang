@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ?
+            'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' :
+            'https://ptteng.github.io/PPT/css/reveal/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <img src="https://lareina-wzy.github.io/test/pttenglogo.png" alt="" usemap="#pttmap" class="base-logo">
+    <map name="pttmap">
+        <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com" alt="" target="_blank" />
+    </map>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h4>position定位有哪几种？各有什么特点</h4>
+                <h4>分享人：王玺</h4>
+            </section>
+            <section>
+                <p>目录</p>
+                <p>1.背景介绍</p>
+                <p>2.知识剖析</p>
+                <p>3.常见问题</p>
+                <p>4.解决方案</p>
+                <p>5.编码实战</p>
+                <p>6.扩展思考</p>
+                <p>7.参考文献</p>
+                <p>8.更多讨论</p>
+            </section>
+            <section>
+                <h3>1.背景介绍</h3>
+            </section>
+
+            <section style="font-family: 'Times New Roman'; text-transform:none;">
+                <!-- <h4 style="font-family: 'Times New Roman'; text-transform:none;">什么是Ajax？</h4> -->
+                <section>
+                    <p style="text-align: left;">
+                        <!-- <h4>为什么要使用SASS</h4> -->
+                        position定位在我们制作页面的过程中起到了微调位置，固定某部分位置的作用。
+                        我们学习position定位时，首先了解到的是它的四个主要用法。从下图中可以看到分别是Absolute,fixed,static和relative。
+                        <img src="./images/小课堂脑图.png" alt="" style="widows: 600px;; margin-left: 50px;">
+                        </p>
+                     <p style="text-align: left;">
+                        </p>
+
+                </section>
+                <section>
+                    <!-- <h2>MARGIN为负值时产生的影响</h2> -->
+                    <p style="text-align: left;">
+                        了解position前我们先了解一下我们正常的块级元素排列方式，它是基于窗体自上而下分成一行一行排列。若要让其在一行内排列则要将
+                        它设置成行内元素；
+                    </p>
+                </br>
+                    <p style="text-align: left;">
+                        通常我们在不同的表现方式上会用到不同的定位方式，那么下面就具体讲解下各个定位方式的用法。
+                    </p>
+                    
+                </section>
+
+            </section>
+            <section>
+                <h3>2.知识剖析</h3>
+                position的4大主要定位方式
+            </section>
+
+            <section>
+              
+                <section>
+                    <p style="text-align: left;">
+                        1.static定位<br>
+                        static定位即为静态定位：它是我们position的默认值，没有定位元素出现在正常的文档流中
+                        （如果设置 top, bottom, left, right, z-index这些属性就不起做作了）。也就是说我们无法通过这个状态，对我们的元素做出任何位置上的变动修改。
+</p>
+
+                </section>
+                <section>
+                    <p style="text-align: left;">
+                        2、relative定位<br>
+                        relative定位即为相对定位，通过top,bottom,left,right的设置相对于其原本位置进行定位。在这里也要注意relative会让它原本移动的地方出现文本流，就是说它原本的坑位一直存在。
+                        可通过z-index进行层次分级。
+                        
+                    </p>
+                </section>
+                <section>
+                    <p style="text-align: left;">
+                        3、absolute<br>
+                        absolute定位即为绝对定位，相对于第一个含有定位的（除static 定位的）父元素进行定位。就是说我们的绝对定位它是追溯到他的上一级含有定位的父元素进行判断它的位置的，
+                        元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行设置。也可通过z-index进行层次分级。
+                      
+                    </p>
+                </section>
+                <section>
+                    <p style="text-align: left;">
+                            4、fixed：<br>
+                            fixed定位即为固定定位，这是一个绝对定位的元素，只是它的基准是以我们的浏览器窗口
+                            来判定的，元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行设置。也可通过z-index进行层次分级。这种定位方式我们在平常经常性的能遇到，例如，我们任务的页首和页尾部分，和一些固定式的广告。
+
+                    </p>
+                </section>
+
+                <section>
+                    <p style="text-align: left;">
+                            5、其他几类定位属性：<br>                          
+                           1.position:initial中initial是把元素的属性恢复为它的默认值，可作用于任何 CSS 样式。
+                
+                            <br>2.position: inherit是继承的作用，继承父级元素position定位的属性值。
+                            <br>3.position: unset
+                            属性不设置。如果该属性默认是继承的，该值相当于 inherit；如果该属性是非继承属性，该值等同于 initial 不设置时的默认值。
+                            <br>
+                            <br>
+                    </p>
+                </section>
+                <!-- <section>
+                    <p style="text-align: left">
+                            8、页面样式属性<br>
+                            page：规定元素应该被显示的页面特定类型。
+                            <br>page-break-inside：设置在表格元素内部避免进行分页的分页行为。
+                            <br>windows：设置当元素内部发生分页时必须在页面顶部保留的最少行数。
+                            <br>orphans：设置当元素内部发生分页时必须在页面底部保留的最少行数。
+
+                    </p>
+                </section>
+                <section>
+                        <p style="text-align: left">
+                                9、声音样式属性：<br>
+                                speak：设置或检索声音是否给出。
+                                <br>speak-punctuation：设置或检索标点符号如何发音。
+                                <br>speak-numeral：设置或检索数字如何发音。
+                                <br>speak-header：设置或检索表格头与其后的一系列单元格发生多少次关系。
+                                <br>speech-rate：设置或检索发音速度。
+                                <br>volume：设置或检索音量。
+                                <br>voice-family：设置或检索当前声音类型。
+                                <br>pitch：设置或检索音高。
+                                <br>pitch-range：设置或检索声音的平滑程度。
+                                <br>stress：设置或检索当前声音波形的最高峰值。
+                                <br>richness：设置或检索当前声音的音色。
+                                <br>azimuth：设置或检索当前声音的音场角度。
+                                <br>elevation：设置或检索当前声音的音源仰角。
+                        </p>
+                    </section> -->
+                <!-- <section>
+                    <p style="text-align: left;">
+
+
+
+
+
+
+
+
+                    </p>
+                </section> -->
+
+
+
+
+
+
+
+
+
+
+
+                <!-- 切换到下面 -->
+                <!-- <section style="font-family: 'Times New Roman'; text-transform:none;">
+                    <p style="text-align: left;">
+                        一个完整的请求由四部分组成
+                        <br>接下来，我们就要监听请求成功的状态变化了
+                        <br>onreadystatechange：用来监听readyState的变化的
+                        <br>readyState：表示当前请求的后台的状态
+                        <br>status：表示处理的结果
+                        <br>其中readyState：表示当前请求的后台的状态
+                    </p>
+                </section>
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+                    <p style="text-align: left;">
+                        0：请求未初始化(还没有调用open())
+                        <br>1：请求已经建立，但是还没有发送(还没有调用send())
+                        <br>2：请求已经发送，正在处理中
+                    </p>
+                </section>
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+                    <p style="text-align: left;">
+                        3：请求正在处理中，通常响应中已经有部分数据可以用了
+                        <br>4：响应已经完成，可以获取并使用服务器的响应了
+                        <br>而status：表示处理的结果(状态码)
+                        <br>1XX，表示收到请求正在处理中
+                        <br>status == 200 是表示处理的结果是OK的
+                        <br>状态码:200到300是指服务端正常返回
+                    </p>
+                </section>
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+                    <p style="text-align: left;">
+                        304:如果网页自请求者上次请求后再也没有更改过，应将服务器配置为返回此响应，进而节省带宽和开销
+                        <br>404:找不到对象（404 not found)
+                        <br>503:服务器超时
+                        <br>设置请求参数
+                        <br>xhr对象接受三个参数 
+                        <br>1：表示请求类型
+                        <br>2：表示请求的网址
+                        <br>3：表示是否异步
+                        <br>get/post/put/delete
+                        <br>Get和post方法的区别：
+                        <br>get是获取数据，get的send方法的参数可以是null或者空，对发送信息有限制，一般在2000个字符，一般是用来查询（幂等） 
+                        <br>post可以发送数据，但是在使用post方法发送数据，
+                    </p>
+                </section>
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+                    <p style="text-align: left;">
+                        <br>需要使用setRequestHeader()来添加HTTP头，同时，post的send()方法需要写入要发送的数据的值, 
+                        <br>一般用于修改服务器上的资源，对信息数量无限制，也更安全
+                    </p>
+                </section>
+            </section> -->
+                <section>
+                    <h3>3.常见问题</h3>
+                    <p style="text-align: justify;">
+                            1、当我们对一个子元素要让他确定在父元素的任意一个位置时应该怎样操作？
+                    </p>
+                </section>
+
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+
+                    <h3>4.解决方案</h3>
+                    父容器使用相对定位，子元素使用绝对定位后，这样子元素
+                    的位置不再相对于浏览器左上角，而是相对于父窗口左上角，然后我们就可以通过子元素的绝对定位，让他在这个父元素内移动了。
+                </section>
+                <!-- <section>
+                    <p style="text-align: left;">
+                    
+
+                    </p>
+                </section>
+
+                <section>
+                    <p style="text-align: left;">
+                      
+
+                    </p>
+                </section>
+
+                <section>
+                    <p style="text-align: left;">
+                     
+
+                    </p>
+                </section>
+                <section>
+                    <p style="text-align: left;">
+                     
+
+                    </p>
+                </section>
+
+                <section>
+                    <p style="text-align: left;">
+                      
+
+                    </p>
+                </section> -->
+
+
+                <!-- <section>
+                <h3>4.解决方案</h3>
+                <p>xhr.open("post", "/carrots-admin-ajax/a/login",true);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.send("name=" + name + "&pwd=" + code);
+                    Content-type要作为请求头放在open和send之间</p>
+            </section>
+            <section class="" style="top: 275px; display: none;" aria-hidden="true">
+              
+                <h6>
+                    <a href="https://ptteng.github.io/WEB/demo/angular%E7%9A%84%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3%E6%98%AF%E4%BB%80%E4%B9%88/demo2.html"
+                        target="_blank">demo</a>
+                </h6>
+            </section> -->
+
+                <section>
+                    <h3>5.编码实战</h3>
+                    <p>正文已展示</p>
+                </section>
+
+                <section>
+                    <h3>6.扩展思考</h3>
+                    <p style="text-align: justify;">
+                            1. 要考虑一下在使用float浮动时，会和我们的position形成什么样的效果？
+                        <br>2. 还有没有其他方式来移动元素呢？
+                            
+                    </p>
+                    
+
+                   
+                </section>
+
+
+
+                <section>
+                    <h3>7.参考文献</h3>
+                </section>
+                <section style="text-align:left">
+                    <h6>
+                        <p>https://blog.csdn.net/setsunadoudou/article/details/100886308
+                        </p>
+                        <p>https://www.cnblogs.com/guolao/p/9048308.html</p>
+                    </h6>
+
+                </section>
+                <section>
+                    <h3>8.更多讨论</h3>
+
+                    
+                </section>
+
+
+
+
+                <section>
+                    <h4>鸣谢</h4>
+                    <p>感谢大家观看</p>
+                    <p>
+                        <small style="vertical-align: middle"></small>
+                    </p>
+
+                </section>
+
+        </div>
+    </div>
+
+    <script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+    <script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+
+    <script>
+        // 以下为常见配置属性的默认值
+        // {
+        // 	controls: true, // 是否在右下角展示控制条
+        // 	progress: true, // 是否显示演示的进度条
+        // 	slideNumber: false, // 是否显示当前幻灯片的页数编号，也可以使用代码slideNumber: 'c / t' ，表示当前页/总页数。
+        // 	history: false, // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+        // 	keyboard: true, // 是否启用键盘快捷键来导航
+        // 	overview: true, //                                                                                                                                                                                                                                                                                                      是否启用幻灯片的概览模式，可使用"Esc"或"o"键来切换概览模式
+        // 	center: true, // 是否将幻灯片垂直居中
+        // 	touch: true, // 是否在触屏设备上启用触摸滑动切换
+        // 	loop: false, // 是否循环演示
+        // 	rtl: false, // 是否将演示的方向变成RTL，即从右往左
+        // 	fragments: true, // 全局开启和关闭碎片。
+        // 	autoSlide: 0, // 两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+        // 	transition: 'default', // 切换过渡效果，有none/fade/slide/convex/concave/zoom
+        // 	transitionSpeed: 'default', // 过渡速度，default/fast/slow
+        // 	mouseWheel: true, //是否启用通过鼠标滚轮来切换幻灯片
+        // }
+        // 初始化幻灯片
+        Reveal.initialize({
+            //        history: true,
+            transition: 'default',
+            transitionSpeed: 'slow',
+            dependencies: [{
+                    src: '../plugin/markdown/marked.js'
+                },
+                {
+                    src: '../plugin/markdown/markdown.js'
+                },
+                {
+                    src: '../plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: '../plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+        //    原始类型对象直接赋值不会相互影响
+        //    var a = 1;
+        //
+        //    var b = a;
+        //    b = 10;
+        //    console.log(a); // 1
+        ////
+        //    var a = 'hello';
+        //    var b = a;
+        //    b = 'world';
+        //    console.log(a); // hello
+        //
+        //    var a = true;
+        //    var b = a;
+        //    b = false;
+        //    console.log(a);
+        //数组浅复制
+        //    var a = ['隔壁老王','冠希哥', '宋经理' //定义一个名为a的属猪，里面有3个值，
+        //    ];
+        //    var b = a;   //定义一个变量b，把a赋值给他，这样比、b和a一样了
+        //    b[2] = '冲冲老师'; //然后把b的第三个值等于冲冲老师
+        //    console.log(a)//那么现在打印a 是什么结果呢
+        //
+        //    var arr = ["One","Two","Three"];   //数组的深复制，slice方法
+        //    var arrtoo = arr.slice(1);
+        //    arrtoo[2] = "set Map";
+        //    console.log(arr);//One,Two,Three
+        //    console.log(arrtoo);//One,set Map,Three
+        //
+        //    var arr1 = ["One","Two","Three"]; //数组的深复制，concat 方法
+        //    var arrtooo = arr1.concat(111111);
+        //    arrtooo[1] = "set Map To";
+        //    console.log(arr1);//One,Two,Three
+        //    console.log(arrtooo);//One,set Map To,Three
+        //
+        //    var b=[1,2,3,4,5];   //concat的链接
+        //    var c=[6,7,8,9];
+        //    var d =[4,4,22]
+        //    console.log(b.concat(c,d))
+        var a = {
+            name: 'yy',
+            age: 26
+        }; //对象的浅拷贝哦
+        var b = new Object();
+        b.name = a.name;
+        b.age = a.age;
+        b.name = 'xx';
+        console.log(a); //Object { name="yy", age=26}
+        console.log(b); //Object { name="xx", age=26}
+        var d = { //对象的浅拷贝哦 第一种
+            name: 'd',
+            oc: {
+                age: 32
+            },
+            oad: {
+                adds: {
+                    bb: 12
+                }
+            }
+        };
+        var deepCopy = function (source) {
+            var result = {};
+            for (var key in source) {
+                result[key] = typeof source[key] === 'object' ? deepCopy(source[key]) : source[key]
+            }
+            return result
+        };
+        var c = deepCopy(d);
+        c.name = 'c';
+        c.oc = {
+            age: 49
+        };
+        console.log(c);
+        console.log(d);
+        //    var person = {    //第二种深拷贝
+        //        name: 'aa',
+        //        friends: ['da', 'dsa', 'gf']
+        //    };
+        //
+        //    var aPerson = Object.create(person, {
+        ////        name: {
+        ////            value: "gee"
+        ////        }
+        //    });
+        //
+        //    console.log(person.name);
+        //    console.log(aPerson.friends)
+        var Chinese = {
+            nation: '中国'
+        }
+        var Doctor = {
+            career: '医生'
+        }
+
+        function extendCopy(p) {
+            var c = {};
+            for (var i in p) {
+                c[i] = p[i];
+            }
+            c.uber = p;
+            return c;
+        }
+        var Doctor = extendCopy(Chinese);
+        Doctor.career = '医生';
+        console.log(Doctor); // 中国
+        Chinese.birthPlaces = ['北京', '上海', '香港'];
+        var Doctor = extendCopy(Chinese);
+        Doctor.birthPlaces.push('厦门');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+$baccolor: #5AC0CE;
+$bac:url(登录_01.png);
+@mixin flex {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+@mixin posit {
+  position: relative;
+  left:-5px;
+  width: 100%;
+  margin-right:-50px;
+  border: 0px; 
+}
+@mixin font {
+  color: black;
+  font-weight: 500;
+  font-size: 250%;
+}
+@mixin head-text {
+  font-size: 230%;
+  color: white;
+  font-weight: 500;
+}
+@mixin content-bac ($bac){
+  background: $bac;
+  background-repeat: no-repeat; 
+  background-size: 135px;
+  background-position: 38px 38px;
+}
+@mixin posit-2 {
+  position:relative;
+  left:-8px;
+  top: -8px;
+  margin-right:-15px;
+  margin-bottom: 25px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.header {
+  @include flex;
+  flex-direction:row;
+  background: $baccolor;
+  height: 140px;
+  @include posit-2;
+}
+.content1 {
+  height: 120px;
+  @include content-bac(url(登陆_03.png));
+  padding-left: 18%;
+  box-sizing: border-box;
+  @include posit();
+  @include font();
+}
+.content2 {
+  height: 120px;
+ 
+  @include content-bac(url(登陆_06.png));
+  padding-left: 18%;
+  box-sizing: border-box;
+  @include posit();
+  @include font();
+}
+.pic {
+  width: 45px;
+  height: 66px;
+  margin-top: 53px;
+  margin-left: 5%;
+}
+.text1
+{
+ @include head-text;
+  margin-left: 50px;
+}
+.text2 {
+  @include head-text;
+  width: 150px;
+}
+.text3 {
+  @include head-text;
+  margin-right: 50px;
+}
+.text4 {
+  @include flex();
+  justify-content: center;
+  @include head-text();
+  font-size: 330%;
+  letter-spacing: 40px;
+  height: 180px;
+  background: $baccolor;
+  @include posit();
+  left: -8px;
+  top: -8px;
+  margin-top: 50px;
+}
+.form1 {
+  background: #fff;
+}
+input::-webkit-input-placeholder {color:rgb(186,186,186);}

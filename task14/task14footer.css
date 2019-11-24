@@ -1,0 +1,73 @@
+.footer {
+  background: #26a26f;
+  color: #fff;
+  font-size: 90%;
+  font-weight: 50;
+}
+
+.dibu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.di1, .di2, .di3 {
+  margin: 0 auto;
+}
+
+.zongzhi {
+  margin-top: 20px;
+}
+
+.contact {
+  width: 230px;
+}
+
+.di2 {
+  width: 190px;
+}
+
+.di3 {
+  margin-top: 20px;
+}
+
+.chao {
+  width: 190px;
+  padding-top: 15px;
+}
+
+.contact2 {
+  width: 230px;
+  height: 30px;
+  position: relative;
+  top: 4px;
+  left: 20px;
+  white-space: nowrap;
+}
+
+.gszh {
+  font-size: small;
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .youqing > ul {
+    display: block;
+    padding-left: 45%;
+    font-size: 130%;
+  }
+  .dibu {
+    flex-direction: column;
+  }
+  .di1,
+  .di2,
+  .di3 {
+    margin: 0 auto;
+  }
+  .di3 {
+    margin-top: 20px;
+  }
+  .di1 {
+    position: relative;
+    left: 20px;
+  }
+}

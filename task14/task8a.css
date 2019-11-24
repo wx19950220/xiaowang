@@ -1,0 +1,837 @@
+.joinus {
+    display: flex;
+    justify-content: space-between;
+    height: 39px;
+}
+
+.gszh {
+    font-size: small;
+    text-align: right;
+}
+
+.phone {
+    position: relative;
+    left: 40px;
+    top: 6px;
+    color: #29b078;
+    font-size: 14px;
+    width: 165px;
+    white-space: nowrap;
+}
+
+.howstudy,
+.howstudy3,
+.howstudy4 {
+    display: flex;
+    width: 270px;
+}
+
+.howstudy-top {
+    display: flex;
+    justify-content: center;
+}
+
+.howstudy-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.contact {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    top: 4px;
+    left: 20px;
+}
+
+.wechat {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background: url(images/加入我们.png)-5px -55px;
+}
+
+.qq {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background: url(images/加入我们.png)-5px -10px
+}
+
+.list a {
+    color: #999999;
+}
+
+.weibo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background: url(images/加入我们.png)-50px -10px
+}
+
+.navbar {
+    background-color: #29b078;
+    border: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-toggle {
+    padding: 9px 7px;
+
+}
+
+.nav-toggle:hover {
+    background-color: #29b078;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #29b078;
+}
+
+.ce {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: left;
+        position: relative;
+        left: 65%;
+        margin: 0;
+        font-size: 130%;
+    }
+}
+
+.navbar-nav {
+    font-size: 120%;
+    position: relative;
+    margin-left: -90px;
+}
+
+.carousel {
+    top: -20px;
+}
+
+.navbar {
+    z-index: 3;
+}
+
+.pic1 {
+    background: url();
+}
+.navbar-brand {
+    position: relative;
+    top: -13px;
+    left: 25px;
+}
+.circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #f1f0f0;
+    color: #29b078;
+    text-align: center;
+    line-height: 55px;
+    font-size: 130%;
+    position: relative;
+    top: 15px;
+    background-color: #fff;
+}
+
+.arrow1,
+.arrow2,
+.arrow4,
+.arrow5,
+.arrow7,
+.arrow8 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 30px;
+    left: 7px;
+}
+
+.arrow3 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 30px;
+    left: 35px;
+}
+
+.arrow6 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+@media (max-width:1050px) {
+
+    .howstudy-top,
+    .howstudy-bottom {
+        display: block;
+    }
+
+    .howstudy,
+    .howstudy3,
+    .howstudy4 {
+        margin: 0 auto;
+    }
+
+    .howstudy3,
+    .howstudy4 {
+        margin-bottom: 18px;
+    }
+
+    .arrow5 {
+        position: relative;
+        left: 20px;
+    }
+
+    .arrow4 {
+        position: relative;
+        left: 45px;
+    }
+
+    .arrow1 {
+        position: relative;
+        left: 25px;
+    }
+
+    .arrow2 {
+        position: relative;
+        left: 8px;
+    }
+
+    .arrow3 {
+        position: relative;
+        left: 45px;
+    }
+
+    .arrow7 {
+        position: relative;
+        left: 20px;
+    }
+
+    .arrow8 {
+        position: relative;
+        left: 45px;
+    }
+}
+
+.baner {
+    display: flex;
+
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ali {
+    width: 200px;
+    height: 120px;
+    text-align: center;
+
+}
+
+.jinshan {
+    width: 200px;
+    height: 120px;
+    text-align: center;
+
+}
+
+.huanx {
+    width: 200px;
+    height: 120px;
+    text-align: center;
+
+}
+
+.rongl {
+    width: 200px;
+    height: 120px;
+    text-align: center;
+
+}
+
+.qiniu {
+    width: 200px;
+    height: 120px;
+    text-align: center;
+}
+
+.baner div:hover {
+    border: 1px solid #f4f4f4;
+    box-shadow: darkgrey 5px 5px 30px 5px;
+}
+
+@media (max-width: 992px) {
+    .baner {
+        flex-wrap: wrap;
+    }
+}
+
+.introduce {
+    width: 250px;
+    height: 380px;
+    border: 1px solid #eeeded;
+    margin-bottom: 50px;
+    background: #fff;
+}
+
+.introduce-tol {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.introduce:hover {
+    box-shadow: darkgrey 5px 5px 30px 5px;
+}
+
+@media (max-width:1350px) {
+    .introduce-tol {
+        display: block;
+    }
+
+    .introduce {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+.text2 {
+    font-size: 90%;
+    color: #999999;
+    line-height: 25px;
+    padding: 15px 20px;
+}
+
+.text2-1 {
+    font-size: 90%;
+    color: #999999;
+    line-height: 25px;
+    padding: 15px 20px;
+    text-align: left;
+}
+
+@media (max-width:992px) {
+    .text2-1 {
+        text-align: center;
+    }
+
+}
+
+.circle2 {
+    width: 120px;
+    height: 120px;
+    background: url(总人物.png) -10px -138px;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.circle3 {
+    width: 120px;
+    height: 120px;
+    background: url(总人物.png) -138px -138px;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.circle4 {
+    width: 120px;
+    height: 120px;
+    background: url(总人物.png) -10px -10px;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.circle5 {
+    width: 120px;
+    height: 120px;
+    background: url(总人物.png) -138px -10px;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.text3 {
+    width: 100%;
+    font-size: 120%;
+    font-weight: 550;
+    padding: 5% 21%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.text4 {
+    font-size: 120%;
+    font-weight: 550;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.dian1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #69d1e9;
+}
+
+.dian2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}
+
+.dian {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70px;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+    top: -38px;
+}
+
+.dian2:hover {
+    background-color: #69d1e9;
+}
+
+.youqing {
+    margin: 0 auto;
+    width: 80%;
+    color: #000;
+}
+
+.text5 {
+    font-size: 120%;
+    font-weight: 550;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+@media (max-width: 992px) {
+    .youqing>ul {
+        display: block;
+        padding-left: 45%;
+        font-size: 130%;
+    }
+
+    .dibu {
+        flex-direction: column;
+    }
+
+    .di1,
+    .di2,
+    .di3 {
+        margin: 0 auto;
+    }
+
+    .di1 {
+        position: relative;
+        left: 20px;
+    }
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+
+    background: #26a26f;
+    color: #fff;
+    font-size: 110%;
+    font-weight: 50;
+}
+
+.dibu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.chao {
+    width: 190px;
+    padding-top: 15px;
+}
+
+.zongzhi {
+    margin-top: 20px;
+}
+
+.contact {
+    width: 230px;
+}
+
+.di2 {
+    width: 190px;
+}
+
+.di3 {
+    margin-top: 20px;
+}
+
+.bq {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ff650e;
+    position: relative;
+    top: 5px;
+    left: -10px;
+}
+
+.hezuo {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 110%;
+    position: relative;
+    left: 40%;
+    color: #3fb582;
+}
+
+.text_td {
+    padding-top: 30px;
+    font-size: 110%;
+    line-height: 25px;
+    color: #999999;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top: 1px solid #e6e6e6;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin-bottom: 50px;
+}
+
+.text_td1 {
+
+    width: 900px;
+    font-size: 110%;
+    line-height: 25px;
+    color: #999999;
+    padding-top: 60px;
+    padding-right: 40px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.hzqy {
+    font-size: 120%;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #e6e6e6;
+}
+
+.text-hz {
+    border: 1px solid #e6e6e6;
+    background: white;
+    padding: 0;
+    margin-left: 100px;
+    margin-top: 45px;
+    width: 300px;
+    height: 800px;
+}
+
+.text-zong {
+    display: flex;
+    overflow: auto;
+}
+
+.text-js {
+    border: 1px solid #e6e6e6;
+    background: white;
+    padding: 0;
+    margin-top: 45px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    width: 850px;
+}
+
+.text-pic {
+    display: flex;
+}
+
+@media (max-width:1300px) {
+    .text-zong {
+        display: block;
+    }
+
+    .text-hz {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .hezuo {
+        justify-content: center;
+        width: 200px;
+        margin: 0 auto;
+        left: 0;
+    }
+
+    .text-js {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media (max-width:776px) {
+    .text-pic{
+        display: block;
+    }
+    .text-pic>img {
+        display: flex;
+        margin: 0 auto;
+    }
+    .text_td1{
+        width: auto;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+}
+.hezuo:hover>div {
+    color: #ff650e;
+    text-decoration: none;
+}
+
+.hezuo:hover>span {
+    background-color: #ff650e;
+
+}
+
+.tou {
+    color: #3fb582;
+}
+
+.shouye {
+    font-size: 120%;
+    font-weight: 550;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d0d6d9;
+}
+
+.leibie {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.anniu1 {
+    width: 40px;
+    margin-left: 25px;
+    text-align: center;
+
+}
+
+.anniu2 {
+    width: 80px;
+    margin-left: 25px;
+    text-align: center;
+
+}
+
+.anniu3 {
+    width: 80px;
+    margin-left: 25px;
+    text-align: center;
+
+}
+
+.anniu4 {
+    width: 80px;
+    margin-left: 25px;
+    text-align: center;
+
+}
+
+.anniu5 {
+    width: 80px;
+    margin-left: 25px;
+    text-align: center;
+
+}
+
+.anniu6 {
+    width: 80px;
+    margin-left: 25px;
+    text-align: center;
+
+}
+
+.anniu1:hover {
+    background-color: #29b078;
+    color: white;
+}
+
+.anniu2:hover {
+    background-color: #29b078;
+    color: white;
+}
+
+.anniu3:hover {
+    background-color: #29b078;
+    color: white;
+}
+
+.anniu4:hover {
+    background-color: #29b078;
+    color: white;
+}
+
+.anniu5:hover {
+    background-color: #29b078;
+    color: white;
+}
+
+.anniu6:hover {
+    background-color: #29b078;
+    color: white;
+}
+
+.fangxiang {
+    font-size: 130%;
+    font-weight: 550;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d0d6d9;
+}
+
+.b1 {
+
+    padding: 20px 10px;
+}
+
+.tp {
+    width: 150px;
+    height: 150px;
+
+}
+
+.gcs {
+    font-size: 120%;
+    font-weight: 600;
+
+}
+
+.qd {
+    border-left: 1px solid white;
+}
+
+.bk {
+
+    margin-top: 30px;
+    border: 1px solid #eeeded;
+    background: white;
+    width: 320px;
+
+
+}
+
+.mk {
+    padding: 10px 8px;
+    font-size: 90%;
+    font-weight: 550;
+    color: #cdcdcd;
+}
+
+.xz {
+    padding: 10px 8px;
+    font-size: 90%;
+    font-weight: 550;
+    width: 70%;
+}
+
+.dy {
+
+    border: 1px solid #eeeded;
+    background: white;
+    border-top: 1px solid white;
+    width: 320px;
+
+}
+
+.text-ios {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 320px;
+    height: 466px;
+    position: absolute;
+    top: 30px;
+    display: none;
+    animation: myfirst 5s;
+}
+
+@keyframes myfirst {
+    0% {
+        transform: rotateY(360deg);
+    }
+}
+
+.abc {
+    position: relative;
+    margin-right:200px;
+    
+}
+.qdfx {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:1140px) { 
+    .qdfx{
+        display: block;
+    }
+    .abc {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+.abc:hover .text-ios {
+    display: block;
+}
+
+.active>a:hover {
+    text-decoration: underline;
+}
+
+.xhx {
+    display: none;
+    width: 64px;
+    height: 4px;
+    background: white;
+    margin: 0 auto;
+}
+
+.ce>a:hover~.xhx {
+    display: block;
+}
+
+.nav>li {
+    height: 54px;
+}

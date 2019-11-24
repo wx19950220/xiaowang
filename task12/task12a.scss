@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+}
+
+$justify:center;
+$color:#5AC0CE;
+$color2:white;
+
+@mixin flex($justify) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin posit1 {
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+@mixin footer-border($color, $color2) {
+    border-radius: 6px;
+    background-color: $color;
+    border: 2px solid $color;
+    color: $color2;
+    font-weight: 500;
+}
+
+@mixin footer-size {
+    float: left;
+    height: 40px;
+    width: 40%;
+}
+
+@mixin li-border {
+    display: flex;
+    border-bottom: 1px solid rgb(225, 229, 231);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+@mixin main-posi {
+    position: relative;
+    color: white;
+}
+
+.header {
+    @include flex(normal);
+    height: 50px;
+    @include posit1();
+    top: 0px;
+    background: $color;
+}
+
+.header1 {
+    height: 20px;
+    width: 20px;
+    color: $color2;
+    padding-left: 5%;
+}
+
+.header2 {
+    color: $color2;
+    font-size: 18px;
+    font-weight: 540;
+    position: absolute;
+    left: 42%;
+    letter-spacing: 1px;
+    width: 100px;
+}
+
+.footer {
+    @include flex(space-between);
+    height: 70px;
+    @include posit1();
+    bottom: 0px;
+    background-color: $color2;
+}
+
+.footer1 {
+    @include flex(center);
+    @include footer-size();
+    margin-left: 6%;
+    @include footer-border($color, $color2);
+}
+
+.footer2 {
+    @include flex(center);
+    @include footer-size();
+    margin-right: 6%;
+    text-align: center;
+    @include footer-border($color, $color2)
+}
+
+.li3 {
+    color: gray;
+    @include li-border();
+    padding-left: 6%;
+}
+
+.a {
+    width: 250px;
+    margin-left: 5%;
+    color: black;
+    font-weight: 540;
+}
+
+.li0 {
+    padding-left: 1px;
+}
+
+.li1 {
+    @include li-border();
+    font-size: 2px;
+    font-weight: 900;
+    color: $color;
+    padding-left: 3%;
+}
+
+.c {
+    padding-left: 3%;
+    font-size: 18px;
+    font-weight: 540;
+    color: black;
+    white-space: nowrap;
+    position: relative;
+    top: -2px;
+}
+
+.li2 {
+    @include li-border();
+    padding-left: 6%;
+}
+
+.pic {
+    font-weight: 540;
+}
+
+.d {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(225, 229, 231);
+}
+
+.b {
+    color: red;
+    font-weight: 540;
+    padding-left: 5%;
+    white-space: nowrap;
+}
+
+.e {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    position: absolute;
+    top: 50px;
+    bottom: 70px;
+    width: 100%;
+    overflow: auto;
+}
+
+.main1 {
+    background: url(images/task5-1_02.png);
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: url(images/task5-1_04_03.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+.main5 {
+    @include main-posi();
+    top: -30px;
+    left: 130px;
+    font-weight: 200;
+}
+
+.main3 {
+    @include main-posi();
+    top: -15px;
+    left: 130px;
+    font-size: 125%;
+}
+
+.main4 {
+    @include main-posi();
+    top: -35px;
+    left: 200px;
+    font-weight: 200;
+}

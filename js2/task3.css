@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+}
+
+.m-header {
+    display: flex;
+    height: 63px;
+    background: #29bde0;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid white;
+}
+
+.m-header-bac {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(45deg);
+}
+
+.m-header-sf {
+    color: white;
+    font-size: 120%;
+    line-height: 63px;
+    width: 90px;
+    margin: 0 auto;
+}
+
+.m-header-close1 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    height: 2px;
+    width: 30px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.m-header-close2 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    height: 2px;
+    width: 30px;
+    background: white;
+    transform: rotate(135deg);
+}
+
+.main {
+    background: #29bde0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.varcircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: white;
+    color: #f56b81;
+    font-size: 120%;
+    position: relative;
+    top: 28px;
+    line-height: 40px;
+    text-align: center;
+    border:1px solid #ffedc5;
+}
+.sfk {
+    border:3px solid white;
+    background: #ffedc5;
+    height: 350px;
+    width: 70vw;
+    margin:0 auto;
+}
+.pic-size {
+    width: 180px;
+    margin:0 auto;
+}
+.box-flex2 {
+    text-align: center;
+    position: relative;
+    top: 60px;
+    display: none;
+}
+.box-flex1 {
+    text-align: center;
+    position: relative;
+    top: 60px;
+    
+}
+#sfvar {
+    margin-top: 30px;
+    font-size: 250%;
+    color: #29bde0;
+}
+.fp-size {
+    width: 180px;
+    margin:0 auto;
+}
+.anniu1 {
+    margin-left:20vw;
+    margin-top:60px;
+    width: 60vw;
+    height: 40px;
+    background: #fbb435;
+    border: 1px solid #29bde0;
+    outline:none;
+}
+.anniu-sty1 {
+    font-size: 120%;
+    line-height: 40px;
+    
+}
+.anniu-sty2 {
+    display: none;
+   font-size: 120%;
+   line-height: 40px;
+
+}
+.anniu-sty3 {
+    display: none;
+   font-size: 120%;
+   line-height: 40px;
+
+}
+.anniu2 {
+    display: none;
+    margin-left:20vw;
+    margin-top:60px;
+    width: 60vw;
+    height: 40px;
+    background: #fbb435;
+    border: 1px solid #29bde0;
+    outline:none;
+}

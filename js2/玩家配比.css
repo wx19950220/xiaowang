@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+}
+
+.m-header {
+    height: 70px;
+    background: #29bde0;
+    position: relative;
+}
+
+.m-header-bac {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(45deg);
+}
+
+.m-content {
+    width: 96vw;
+    height: 80px;
+    position: absolute;
+    left: 1vw;
+    top: 20px;
+    background: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 150%;
+    font-weight: 550;
+}
+
+.m-fenpei {
+    display: flex;
+    width: 96vw;
+    height: 80px;
+    position: absolute;
+    left: 1vw;
+    top: 110px;
+    background: white;
+}
+
+.m-comtent-ss {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 20vw;
+
+}
+
+.m-content-pm {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 20vw;
+}
+
+#xsnum {
+    width: 21px;
+    height: 21px;
+}
+
+#pmnum {
+    width: 21px;
+    height: 21px;
+}
+
+.m-inputnum {
+    width: 96vw;
+    height: 100px;
+    position: absolute;
+    left: 1vw;
+    top: 300px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#m-inputnum-inp {
+    width: 21px;
+    height: 21px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background: #f4f5f5;
+}
+
+.m-inputnum-text1 {
+    font-size: large;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.m-inputnum-text2 {
+    font-size: small;
+    color: #fab344;
+    font-weight: 550;
+    margin-left: 5px;
+}
+
+#wjpbtz {
+    position: absolute;
+    top: 420px;
+    left: 1vw;
+    width: 96vw;
+    height: 80px;
+    background: #fab344;
+    border: 1px solid white;
+}
+
+.fapai {
+    font-size: x-large;
+    color: #fff;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.hualun {
+    width: 96vw;
+    height: 90px;
+    position: absolute;
+    left: 1vw;
+    top: 200px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jianhao,
+.jiahao {
+    margin: 15px 0 0 2.5%;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 0px;
+    color: #ffffff;
+    background: #FBB435;
+    cursor: pointer;
+}
+
+.jiahao {
+    margin-right: 50px;
+}
+
+.jianhao {
+    margin-left: 50px;
+}
+
+.hualun-sty {
+    display: block;
+    margin: 0 auto 0px;
+    width: 70%;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 70vw;
+    border-radius: 10px; 
+    position: relative;
+    left: 1vw;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}    
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px; /*将轨道设为圆角的*/
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}
